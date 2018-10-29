@@ -698,7 +698,7 @@ static void modesSendStratuxOutput(struct modesMessage *mm, struct aircraft *a) 
 
     
     // Decide on the basic SBS Message Type
-    if ((mm->msgtype == 32)) { // Mode-A / Mode-C.
+    if (mm->msgtype == 32) { // Mode-A / Mode-C.
         msgType = 32;
     } else if ((mm->msgtype ==  4) || (mm->msgtype == 20)) {
         msgType = 5;
